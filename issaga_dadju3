@@ -1,0 +1,14 @@
+def classificar_numeros(lista):
+    def classificar(numero):
+        if numero == 6:
+            return "dadju"
+        elif numero == 0:
+            return "nada"
+        elif numero % 2 == 0:
+            return "par"
+        elif numero % 3 == 0:
+            return "impar"
+        else:
+            return "desconhecido"
+    
+    return [classificar(numero) for numero in lista]
